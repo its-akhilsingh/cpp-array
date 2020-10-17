@@ -9,6 +9,12 @@ int insertelement(int arr[],int n,int value,int pos)
   arr[pos]=value;
   return(n+1);
 }
+//function for printing array in reverse order
+void reversal(int arr[],int n)
+{
+  for(int i=n-1;i>=0;i--)
+    cout<<arr[i]<<" ";
+}
 void printarray(int arr[],int n)
 {
   cout<<"the array is";

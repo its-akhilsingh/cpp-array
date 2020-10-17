@@ -1,5 +1,15 @@
 #include<iostream>
 using namespace std;
+int minelement (int arr[],int n)//function for finding the minimum element in the array
+{
+int min=arr[0];
+  for(int i=0;i<n;i++)
+  {
+    if(arr[i]<min)
+      min=arr[i];
+  }
+  return min;
+}
 int insertelement(int arr[],int n,int value,int pos)
 {
   for(int t=n-1;t>=pos;t--)

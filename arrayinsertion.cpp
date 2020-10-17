@@ -10,6 +10,17 @@ int min=arr[0];
   }
   return min;
 }
+//function for returning maximum element
+int maxelement(int arr[],int n)
+{
+  int max=arr[0];
+  for(int i=0;i<n;i++)
+  {
+    if(max<arr[i])
+      max=arr[i];
+  }
+  return max;
+}
 int insertelement(int arr[],int n,int value,int pos)
 {
   for(int t=n-1;t>=pos;t--)

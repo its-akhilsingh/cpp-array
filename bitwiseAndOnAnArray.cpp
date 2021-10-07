@@ -10,6 +10,6 @@ int main() {
 
     int tot_and = a[0];
     for(int i=1; i<n; i++)
-        tot_and += a[i];
+        tot_and &= a[i];
     cout << tot_and << endl;
 }
